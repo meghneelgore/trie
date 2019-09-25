@@ -12,7 +12,7 @@ import java.io.File
  * 'terminal' node gives a valid word from the word list loaded into the com.meghneelgore.trie.
  */
 class Trie private constructor() {
-    private lateinit var root: TrieNode<Char, String>
+    internal lateinit var root: TrieNode<Char, String>
     var nWords: Long = 0
         private set
 
@@ -61,14 +61,14 @@ class Trie private constructor() {
         return foundWords
     }
 
-    private fun resetTraversal(root: TrieNode<Char, String>) {
+    internal fun resetTraversal(root: TrieNode<Char, String>) {
         for (trieNode in root.next.values) {
             trieNode.isTraversed = false
             resetTraversal(trieNode)
         }
     }
 
-    private fun traverseTrie(root: TrieNode<Char, String>, listOfCharacters: MutableList<Char>) {
+    internal fun traverseTrie(root: TrieNode<Char, String>, listOfCharacters: MutableList<Char>) {
         for (trieNode in root.next.values) {
             val value: String? = trieNode.value
             value ?: return

@@ -23,7 +23,6 @@ class TrieTest {
         assertAllTraversalsAreFalse(trie.root)
     }
 
-    @Test
     private fun assertAllTraversalsAreFalse(root: TrieNode<Char, String>) {
         for (node in root.next.values) {
             assertFalse("Traversal not reversed", node.isTraversed)

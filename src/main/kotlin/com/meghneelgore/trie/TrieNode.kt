@@ -7,7 +7,8 @@ data class TrieNode<K, V>(
     internal val value: V? = null,
     internal val next: MutableMap<K, TrieNode<K, V>> = mutableMapOf(),
     internal var isTerminal: Boolean = false,
-    internal var isTraversed: Boolean = false
+    internal var isTraversed: Boolean = false,
+    internal var frequency: Int = 0
 ) {
     internal fun contains(key: K): Boolean {
         return next.contains(key)

@@ -12,7 +12,7 @@ class JumbledWordsFinder {
         fun main(args: Array<String>) {
             val fileName = "englishwordswithfrequency.txt"
             val trie =
-                Trie.trieWithFrequencyFromFilename(fileName, minLength = 3, maxLength = 10)
+                Trie.trieWithFrequencyFromFilename(fileName, minLength = 3, maxLength = 9)
             while (true) {
 
                 print("Enter jumble: ")
@@ -59,6 +59,7 @@ class JumbledWordsFinder {
 
         private class WordSayer(val listOfWords: List<String>) : Thread() {
             override fun run() {
+                if (true) return
                 for (word in listOfWords) {
                     Runtime.getRuntime().exec("say $word")
                     sleep(2000)

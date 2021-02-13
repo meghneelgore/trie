@@ -46398,7 +46398,7 @@ deemster, 0
 deemsters, 0
 deener, 0
 deeny, 0
-deep, 0
+deep, 1
 deepen, 0
 deepened, 0
 deepener, 0
@@ -89322,7 +89322,7 @@ irenicon, 0
 irenics, 0
 irenicum, 0
 ireos, 0
-ires, 0
+ires, 1
 iresine, 0
 irfan, 0
 irgun, 0
@@ -99033,7 +99033,7 @@ leda, 0
 lede, 0
 leden, 0
 lederite, 0
-ledge, 0
+ledge, 1
 ledged, 0
 ledgeless, 0
 ledgeman, 0
@@ -128332,11 +128332,11 @@ peduncle, 0
 peduncled, 0
 peduncles, 0
 pedunculi, 0
-pee, 0
+pee, 1
 peebeen, 0
 peebeens, 0
 peebles, 0
-peed, 0
+peed, 1
 peeing, 0
 peek, 0
 peekaboo, 0
@@ -128345,7 +128345,7 @@ peeke, 0
 peeked, 0
 peeking, 0
 peeks, 0
-peel, 0
+peel, 1
 peelable, 0
 peelcrow, 0
 peele, 0
@@ -128420,7 +128420,7 @@ peeweep, 0
 peewees, 0
 peewit, 0
 peewits, 0
-peg, 0
+peg, 1
 pega, 0
 pegador, 0
 pegall, 0
@@ -133284,9 +133284,9 @@ plectron, 0
 plectrons, 0
 plectrum, 0
 plectrums, 0
-pled, 0
+pled, 1
 pledable, 0
-pledge, 0
+pledge, 1
 pledged, 0
 pledgee, 0
 pledgees, 0
@@ -148767,10 +148767,10 @@ rikshaws, 0
 riksmaal, 0
 riksmal, 0
 rilawa, 0
-rile, 0
+rile, 1
 riled, 0
 riley, 0
-riles, 0
+riles, 1
 rilievi, 0
 rilievo, 0
 riling, 0

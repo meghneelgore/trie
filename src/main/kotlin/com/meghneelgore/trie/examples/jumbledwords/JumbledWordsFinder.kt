@@ -24,13 +24,9 @@ class JumbledWordsFinder {
                     .sortedBy { it.first }
                     .sortedBy { it.first.length }
                 prettyPrintWithFrequencies(foundWords)
-                var wordSayer: WordSayer? = null
-                wordSayer = WordSayer(foundWords.filter { it.second > 0 }.map { it.first })
-                wordSayer.start()
                 while (true) {
                     val input = readLine()
                     if (input.isNullOrBlank()) {
-                        wordSayer.stop()
                         // Clear screen. Will not work in IntelliJ's Run console. Will only work on linux and mac
                         // and (maybe) cygwin.
                         print("\u001b[H\u001b[2J")
@@ -38,10 +34,10 @@ class JumbledWordsFinder {
                         break
                     } else {
                         input.split(" ").listIterator().forEach { trie.setEncountered(it.trim()) }
-                        val foundWords = trie.findAllWordsFromCharactersWithFrequency(enteredString)
+                        val localFoundWords = trie.findAllWordsFromCharactersWithFrequency(enteredString)
                             .sortedBy { it.first }
                             .sortedBy { it.first.length }
-                        prettyPrintWithFrequencies(foundWords)
+                        prettyPrintWithFrequencies(localFoundWords)
                     }
                 }
             }
@@ -59,7 +55,6 @@ class JumbledWordsFinder {
 
         private class WordSayer(val listOfWords: List<String>) : Thread() {
             override fun run() {
-                if (true) return
                 for (word in listOfWords) {
                     Runtime.getRuntime().exec("say $word")
                     sleep(2000)
